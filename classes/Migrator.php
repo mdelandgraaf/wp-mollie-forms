@@ -316,6 +316,8 @@ class Migrator
             times             mediumint(9) ,
             stock             mediumint(9) DEFAULT NULL,
             sort_order        mediumint(9) DEFAULT NULL,
+            xfory_x           mediumint(9) DEFAULT NULL,
+            xfory_y           mediumint(9) DEFAULT NULL,
             UNIQUE KEY id (id)
         ) {$this->db->get_charset_collate()};";
         dbDelta($sqlPriceOptions);
